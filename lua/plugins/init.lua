@@ -7,5 +7,6 @@ return {
   require("plugins.navigation"),
   require("plugins.lsp"),
   require("plugins.diagnostics"),
-  require("plugins.git")
+  require("plugins.git"),
+  require("plugins.refactoring"),
 }
