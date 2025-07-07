@@ -5,4 +5,6 @@ return {
   require("plugins.theme"),
   require("plugins.syntax"),
   require("plugins.navigation"),
+  require("plugins.lsp"),
+  require("plugins.diagnostics")
 }

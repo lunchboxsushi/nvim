@@ -32,3 +32,13 @@ vim.opt.mouse = "a"
 
 -- Undo
 vim.opt.undofile = true
+
+-- Disable swap, backup, and writebackup files
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.undofile = false
+
+-- Bell
+vim.opt.belloff = "all"
+vim.opt.visualbell = false
