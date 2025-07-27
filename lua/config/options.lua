@@ -1,6 +1,6 @@
 -- UI
 vim.opt.number = true         -- Line numbers
-vim.opt.relativenumber = true -- Relative line numbers
+-- vim.opt.relativenumber = true -- Relative line numbers
 vim.opt.cursorline = true     -- Highlight current line
 vim.opt.termguicolors = true  -- Enable 24-bit color
 
@@ -10,6 +10,12 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.autoindent = true
+
+-- folds
+vim.o.foldenable = false         -- don't fold on file open
+vim.o.foldlevel = 99            -- allow all folds to be shown
+vim.o.foldlevelstart = 99       -- start with them unfolded
+vim.o.foldcolumn = "1"          -- optional: shows fold indicators (1 column wide)
 
 -- Behavior
 vim.opt.wrap = false

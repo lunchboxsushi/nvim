@@ -5,7 +5,15 @@ return {
     keys = {
       {
         "<leader>xx",
-        function() require("trouble").open({ mode = "diagnostics" }) end,
+        function()
+          local trouble = require("trouble")
+
+          if trouble.is_open() then
+            trouble.close()
+          else
+            trouble.open({ mode = "diagnostics" })
+          end
+        end,
         desc = "Diagnostics (All)",
       },
       {

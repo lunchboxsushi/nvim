@@ -9,4 +9,9 @@ return {
   require("plugins.diagnostics"),
   require("plugins.git"),
   require("plugins.refactoring"),
+  require("plugins.completion"),
+  require("plugins.notes"),
+  require("plugins.dashboard"),
+  require("plugins.markview"),
+  require("plugins.folds")
 }
