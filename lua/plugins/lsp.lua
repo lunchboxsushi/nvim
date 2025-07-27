@@ -13,7 +13,8 @@ return {
       -- Mason LSP bridge
       require("mason-lspconfig").setup({
         ensure_installed = { "lua_ls", "gopls" }, -- change these per language
-        automatic_installation = true,
+        automatic_installation = false,
+        automatic_enable = false,  -- add this to stop auto-enable logic
       })
 
       -- Setup each server
